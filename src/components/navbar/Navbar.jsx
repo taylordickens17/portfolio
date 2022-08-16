@@ -23,16 +23,20 @@ const Navbar = () => {
         </div>
         <ul>
           <li>
-            <a href={<Home />}>Home</a>
+            Home
+            {/* <a href={<Home />}>Home</a> */}
           </li>
           <li>
-            <a href={<Project />}>Work</a>
+            Work
+            {/* <a href={<Project />}>Work</a> */}
           </li>
           <li>
-            <a href={<Blog />}>Blog</a>
+            Blog
+            {/* <a href={<Blog />}>Blog</a> */}
           </li>
           <li>
-            <a href={<Contact />}>Contact</a>
+            Contact
+            {/* <a href={<Contact />}>Contact</a> */}
           </li>
         </ul>
         <div class="toggle-icons">
