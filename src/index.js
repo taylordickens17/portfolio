@@ -1,14 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import App from "./components/home/Home.jsx";
+import Home from "./components/home/Home.jsx";
+import Projects from "./components/project/Project.jsx";
+import Blog from "./components/blog/Blog.jsx";
+import Contact from "./components/contact/Contact.jsx";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <App />
+    <Routes>
+      <Route path="/home" element={<Home/>} />
+      <Route path='/projects' element={<Projects/>}/>
+      <Route path='/blog' element={<Blog/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+    </Routes>
   </BrowserRouter>
 );
 

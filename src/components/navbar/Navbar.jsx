@@ -1,60 +1,46 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-import Home from "../home/Home";
-import Projects from "../project/Project";
-import Blog from "../blog/Blog";
-import Contact from "../contact/Contact";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <Router>
       <div>
-        <nav id="nav" class="nav">
-          <div id="github-linkedin-container" class="github-linkedin-container">
-            <button id="github-btn" class="github-btn">
+        <nav id="nav" className="nav">
+          <div id="github-linkedin-container" className="github-linkedin-container">
+            {/* <button id="github-btn" className="github-btn">
               <a href="">
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
               </a>
             </button>
-            <button id="linkedin-btn" class="linkedin-btn">
+            <button id="linkedin-btn" className="linkedin-btn">
               <a href="">
-                <i class="fa-brands fa-linkedin-in"></i>
+                <i className="fa-brands fa-linkedin-in"></i>
               </a>
-            </button>
+            </button> */}
           </div>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/home">Home</Link>
             </li>
             <li>
-              <Link to="/">Projects</Link>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              Blog
-              {/* <a href={<Blog />}>Blog</a> */}
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
-              Contact
-              {/* <a href={<Contact />}>Contact</a> */}
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
-          <div class="toggle-icons">
-            <i class="fa-solid fa-moon"></i>
-            <i class="fa-solid fa-sun"></i>
+          <div className="toggle-icons">
+            {/* <i className="fa-solid fa-moon"></i>
+            <i className="fa-solid fa-sun"></i> */}
           </div>
-          <div id="light-dark-mode-container" class="light-dark-mode-container">
-            <input type="checkbox" />
-            <span id="light-dark-mode" class="light-dark-mode round"></span>
+          <div id="light-dark-mode-container" className="light-dark-mode-container">
+            {/* <input type="checkbox" />
+            <span id="light-dark-mode" className="light-dark-mode round"></span> */}
           </div>
         </nav>
       </div>
-    </Router>
   );
 };
 

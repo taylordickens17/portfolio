@@ -3,8 +3,8 @@ import Navbar from "../navbar/Navbar";
 
 const Home = () => {
   return (
-    <div>
-      <header id="greetings-container" class="greetings-container">
+    <div className="home">
+      <header id="greetings-container" className="greetings-container">
         <h2>Hello there, friend! I'm</h2>
         <h1>Taylor Dickens</h1>
         <p>
