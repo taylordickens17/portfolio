@@ -1,6 +1,12 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 
+import styled from "styled-components";
+
+const Section = styled.div`
+  display: none;
+`;
+
 const Home = () => {
   return (
     <div className="home">
